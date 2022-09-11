@@ -7,7 +7,7 @@ namespace Linecomparison
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation");
-            Console.WriteLine("Choose option\n 1.Calculate Length\t 2. Length of lines\t 3. Check the both lines");
+            Console.WriteLine("Choose option\n 1.Calculate Length\t 2. Length of lines\t 3. Check the both lines\t 4.Compare to method ");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -19,6 +19,9 @@ namespace Linecomparison
                     break;
                 case 3:
                     CompareTwoLine.CheckBothLine();
+                    break;
+                case 4:
+                    ComparisonMethod.comparisonMethod();
                     break;
                 default:
                     Console.WriteLine("Wrong choice");
